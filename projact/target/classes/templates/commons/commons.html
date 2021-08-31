@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<!--顶部导航栏-->
+<div class="navbar" th:fragment="navbar">
+    <div class="container">
+        <ul>
+            <li><a th:href="@{/index}">农业病虫害资讯</a></li>
+            <li><a th:href="@{/authority_page/identify}">病虫害识别</a></li>
+            <li><a href="">。。。。。</a></li>
+            <li><a th:href="@{/authority_page/account}">账户管理</a></li>
+            <li><a th:href="@{/authority_page/system}">系统设置</a></li>
+<!--            未登陆：登陆-->
+            <li>
+                <a th:href="@{/signin}">登陆系统</a>
+            </li>
+<!--            已登陆：用户名，注销-->
+<!--            <li>-->
+<!--                <a th:href="@{/logout}">注销登陆</a>-->
+<!--            </li>-->
+        </ul>
+    </div>
+</div>
+
+<!--中部导航栏-->
+<div class="header_" th:fragment="header_navbar">
+    <ul>
+        <li><a th:href="@{/index}">棉花</a></li>
+        <li><a th:href="@{/grape-page}">葡萄</a></li>
+        <li><a th:href="@{/fruit-page}">果树</a></li>
+        <li><a th:href="@{/wheat-page}">小麦</a></li>
+        <li><a th:href="@{/rice-page}">水稻</a></li>
+        <li>
+            <a th:href="@{#}">其它</a>
+            <ul>
+                <li>1111</li>
+                <li>2222</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!--底部-->
+<div class="bottom" th:fragment="bottom">
+    <div class="bottom-area">
+        <a>Copyright © 2021.University name All rights reserved.石河子大学</a>
+    </div>
+</div>
+</html>
