@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水稻</title>
+    <link th:rel="stylesheet" th:href="@{/css/templatemo-sty.css}">
+    <link th:rel="stylesheet" th:href="@{/css/min.css}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+</head>
+<body>
+<!--顶部导航栏-->
+<div th:replace="~{commons/commons::navbar}"></div>
+<div class="main">
+<!--    中部导航栏-->
+    <div th:replace="~{commons/commons::header_navbar}"></div>
+
+    <div class="body_">
+        <div class="news_">
+            <a th:href="@{#}"><h2>相关农业害虫资讯</h2></a>
+            <div class="picture">
+                <!--                    <img th:src="@{}">-->
+            </div>
+        </div>
+        <div class="news_">
+            <a th:href="@{#}"><h2>相关农业害虫资讯</h2></a>
+            <div class="picture">
+                <h2>可以放图片或者放文字介绍（待删）</h2>
+                <!--                    <img th:src="@{}">-->
+            </div>
+        </div>
+        <div class="news_">
+            <a th:href="@{#}"><h2>相关农业害虫资讯</h2></a>
+            <div class="picture">
+                <!--                    <img th:src="@{}">-->
+            </div>
+        </div>
+        <div class="news_">
+            <a th:href="@{#}"><h2>相关农业害虫资讯</h2></a>
+            <div class="picture">
+                <!--                    <img th:src="@{}">-->
+            </div>
+        </div>
+    </div>
+    <div class="bottom_">
+        <div class="bottom_header">
+            <h2>该农户自己的相关数据</h2>
+            <div class="picture">
+                <!--                    <img th:src="@{}">-->
+            </div>
+        </div>
+        <div class="bottom_header">
+            <h2>往年同时期病虫害发生数据图</h2>
+            <div class="picture">
+                <!--                    <img th:src="@{}">-->
+            </div>
+        </div>
+        <div class="bottom_last">
+            <h2>数据展示图</h2>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div th:replace="~{commons/commons::bottom}"></div>
+</body>
+</html>
