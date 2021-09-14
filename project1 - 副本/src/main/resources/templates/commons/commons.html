@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+//除首页外其他页面顶部
+<div class="banner" th:fragment="ather-top">
+    <!-- container -->
+    <div class="container">
+        <div class="banner-top">
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="facebook"> </a></li>
+                    <li><a href="#" class="facebook twitter"> </a></li>
+                    <li><a href="#" class="facebook chrome"> </a></li>
+                    <li><a href="#" class="facebook dribbble"> </a></li>
+                </ul>
+            </div>
+            <div class="header-top-right">
+                <form>
+                    <input type="text" placeholder="Search" required="">
+                    <input type="submit" value="">
+                    <div class="clearfix"> </div>
+                </form>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //container -->
+</div>
+
+//除首页外其他页面导航栏
+<div class="top-nav" th:fragment="ather-navbar">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                    <h1><a href="../Public_page/index.html">Edible</a></h1>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a th:href="@{/index}">农业资讯</a></li>
+                    <li><a th:href="@{/Private_page/contact}" class="active4">病虫害识别</a></li>
+                    <li><a th:href="@{/Private_page/codes}" class="active1">病虫害数据统计</a></li>
+                    <li><a th:href="@{/Private_page/about}" class="active2">社区</a></li>
+                    <li><a th:href="@{/Private_page/gallery}" class="active3">Gallery</a></li>
+                    <li><a th:href="@{/Private_page/about}" class="active2">设置</a></li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+//页面底部
+<div class="copyright" th:fragment="bottom">
+    <div class="container">
+        <p>Copyright © 2021.University name All rights reserved.石河子大学</p>
+    </div>
+</div>
+
+//
+
+
+
+</html>
