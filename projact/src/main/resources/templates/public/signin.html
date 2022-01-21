@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>欢迎使用农业病虫害防治系统</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content=""/>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link th:rel="stylesheet" th:href="@{/css/style.css}" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link th:rel="stylesheet" th:href="@{/css/fontawesome-all.css}">
+</head>
+
+<body>
+	<!-- bg effect -->
+	<div id="bg">
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+	</div>
+	<h1>农业病虫害防治系统</h1>
+	<div class="sub-main-w3">
+		<form th:action="@{/login}" method="post">
+			<h2>登 陆
+				<i class="fas fa-level-down-alt"></i>
+			</h2>
+			<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+			<div class="form-style-agile">
+				<label>
+					<i class="fas fa-user"></i>
+					用户名
+				</label>
+				<input placeholder="用户名" name="name" type="text" required="">
+			</div>
+			<div class="form-style-agile">
+				<label>
+					<i class="fas fa-unlock-alt"></i>
+					密码
+				</label>
+				<input placeholder="密码" name="password" type="password" required="">
+			</div>
+			<!-- checkbox -->
+			<div class="wthree-text">
+				<ul>
+					<li>
+						<label class="anim">
+							<input type="checkbox" class="checkbox" name="remember">
+							<span>记住密码!</span>
+						</label>
+					</li>
+					<li>
+						<a href="#">忘记密码?</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //checkbox -->
+			<input type="submit" value="登 陆">
+		</form>
+	</div>
+	<div class="footer">
+		<p>Copyright © 2021.University name All rights reserved.石河子大学</p>
+	</div>
+
+	<!-- Jquery -->
+	<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+	<!-- //Jquery -->
+
+	<!-- effect js -->
+	<script th:src="@{/js/canva_moving_effect.js}"></script>
+	<!-- //effect js -->
+
+</body>
+
+</html>
